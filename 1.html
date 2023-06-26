@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repos search</title>
+  <style type="text/css">
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      background: #C4C4C4;
+      font-family: Roboto;
+      font-weight: 400;
+      color: #000000;
+    }
+    #search {
+      width: 500px;
+      height: 61px;
+      background: #ffffff;
+      font-size: 48px;
+      box-sizing: border-box;
+      padding: 8px;
+      border: none;
+    }
+    .autocomplete__result {
+      background: #E3E3E3;
+      border: 2px solid #000000;
+      width: 500px;
+      height: 44px;
+      box-sizing: border-box;
+      padding: 8px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .autocomplete__result:hover {
+      background: #65CDF9;
+    }
+    .chosen {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 500px;
+      box-sizing: border-box;
+      padding: 8px;
+      background: #E27BEB;
+      border: 1px solid #000000;
+      font-size: 24px;
+    }
+    .delete-btn {
+      color: #FF0000;
+      transform: rotate(45deg);
+      font-size: 80px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Find a repository on GitHub</h1>
+  <div class="search-container">
+    <input type="text" id="search">
+  </div>
+  <div class="chosen-container">
+  </div>
+  <script src="1.js"></script>
+</body>
+
+</html>
